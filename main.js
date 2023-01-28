@@ -1,0 +1,22 @@
+"use strict";
+exports.__esModule = true;
+var message = "Hello World";
+console.log(message);
+var isBeginner = true;
+var name = "harry";
+var total = 20;
+var list = [1, 2, 3, 4, 5];
+var person1 = ["harry", 20];
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 10] = "Red";
+    Color[Color["Green"] = 11] = "Green";
+    Color[Color["Blue"] = 12] = "Blue";
+})(Color || (Color = {}));
+var c = Color.Green;
+console.log(c);
+var randomInput = true;
+randomInput = 10;
+var multiType;
+multiType = 10;
+multiType = true;
