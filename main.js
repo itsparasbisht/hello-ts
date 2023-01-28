@@ -20,3 +20,8 @@ randomInput = 10;
 var multiType;
 multiType = 10;
 multiType = true;
+function add(num1, num2) {
+    if (num2 === void 0) { num2 = 10; }
+    return num1 + num2;
+}
+add(1, 2);

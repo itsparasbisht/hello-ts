@@ -25,3 +25,9 @@ randomInput = 10;
 let multiType: number | boolean;
 multiType = 10;
 multiType = true;
+
+function add(num1: number, num2: number = 10): number {
+  return num1 + num2;
+}
+
+add(1, 2);
