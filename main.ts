@@ -31,3 +31,19 @@ function add(num1: number, num2: number = 10): number {
 }
 
 add(1, 2);
+
+interface Person {
+  firstname: string;
+  lastname: string;
+}
+
+function fullName(person: Person) {
+  console.log(`${person.firstname} ${person.lastname}`);
+}
+
+let p = {
+  firstname: "harry",
+  lastname: "singh",
+};
+
+fullName(p);
