@@ -60,3 +60,26 @@ function consoleError(message: string): void {
 function handleError(message: string): never {
   throw new Error(message);
 }
+
+// readonly, &, ? --------------------
+type Pincode = { pincode: number };
+type CityAndState = { city: string; state: string };
+
+type User = {
+  readonly id: number;
+  name: string;
+  age: number;
+  phoneNo?: number;
+  address: Pincode & CityAndState;
+};
+
+const u: User = {
+  id: 1,
+  name: "harry",
+  age: 20,
+  address: {
+    pincode: 123456,
+    city: "almora",
+    state: "UK",
+  },
+};

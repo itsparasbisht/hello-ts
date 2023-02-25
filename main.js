@@ -43,4 +43,8 @@ function consoleError(message) {
 function handleError(message) {
     throw new Error(message);
 }
-handleError("hello");
+function createUser(_a) {
+    var string = _a.name, number = _a.age;
+    return {};
+}
+createUser({ name: 10, age: 10 });
