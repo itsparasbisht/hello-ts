@@ -86,3 +86,19 @@ const u: User = {
 
 // union type ---------
 const data: (string | number)[] = [1, "harry", 3, 4];
+
+// tuples -----------
+type ApiResponse = [number, string];
+const res: ApiResponse = [200, "hello"];
+
+res.push("1");
+
+// enum ----------
+enum ColorScheme {
+  PRIMARY = "rgb(255,241,140)",
+  SECONDARY = "rgb(140,200,99)",
+  ERROR = "rgb(160,255,180)",
+}
+
+const color = ColorScheme.ERROR;
+console.log(color);

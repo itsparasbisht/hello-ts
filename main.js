@@ -43,8 +43,26 @@ function consoleError(message) {
 function handleError(message) {
     throw new Error(message);
 }
-function createUser(_a) {
-    var string = _a.name, number = _a.age;
-    return {};
-}
-createUser({ name: 10, age: 10 });
+var u = {
+    id: 1,
+    name: "harry",
+    age: 20,
+    address: {
+        pincode: 123456,
+        city: "almora",
+        state: "UK"
+    }
+};
+// union type ---------
+var data = [1, "harry", 3, 4];
+var res = [200, "hello"];
+res.push("1");
+// enum ----------
+var ColorScheme;
+(function (ColorScheme) {
+    ColorScheme["PRIMARY"] = "rgb(255,241,140)";
+    ColorScheme["SECONDARY"] = "rgb(140,200,99)";
+    ColorScheme["ERROR"] = "rgb(160,255,180)";
+})(ColorScheme || (ColorScheme = {}));
+var color = ColorScheme.ERROR;
+console.log(color);
