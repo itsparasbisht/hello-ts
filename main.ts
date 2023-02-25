@@ -47,3 +47,16 @@ let p = {
 };
 
 fullName(p);
+
+// callbacks ---------
+const languages = ["JavaScript", "python", "C#"];
+languages.map((item): string => `language is: ${item}`);
+
+// void and never ----------
+function consoleError(message: string): void {
+  console.log(message);
+}
+
+function handleError(message: string): never {
+  throw new Error(message);
+}

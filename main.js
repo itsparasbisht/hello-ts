@@ -33,3 +33,14 @@ var p = {
     lastname: "singh"
 };
 fullName(p);
+// callbacks ---------
+var languages = ["JavaScript", "python", "C#"];
+languages.map(function (item) { return "language is: ".concat(item); });
+// void and never ----------
+function consoleError(message) {
+    console.log(message);
+}
+function handleError(message) {
+    throw new Error(message);
+}
+handleError("hello");
