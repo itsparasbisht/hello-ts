@@ -83,3 +83,6 @@ const u: User = {
     state: "UK",
   },
 };
+
+// union type ---------
+const data: (string | number)[] = [1, "harry", 3, 4];
