@@ -66,3 +66,18 @@ var ColorScheme;
 })(ColorScheme || (ColorScheme = {}));
 var color = ColorScheme.ERROR;
 console.log(color);
+// generics ----------
+var proceedToCheckout = function (products) {
+    // generate the total cost of the products
+    var total = 1000;
+    return {
+        products: products,
+        total: total
+    };
+};
+var products = [
+    { name: "item1", price: 30 },
+    { name: "item2", price: 20 },
+];
+var rr = proceedToCheckout(products);
+console.log(rr);

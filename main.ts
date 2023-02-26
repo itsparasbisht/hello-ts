@@ -102,3 +102,29 @@ enum ColorScheme {
 
 const color = ColorScheme.ERROR;
 console.log(color);
+
+// generics ----------
+
+const proceedToCheckout = <T>(
+  products: T[]
+): { products: T[]; total: number } => {
+  // generate the total cost of the products
+  const total = 1000;
+
+  return {
+    products,
+    total,
+  };
+};
+
+type ProductCategoryA = {
+  name: string;
+  price: number;
+};
+
+const products = [
+  { name: "item1", price: 30 },
+  { name: "item2", price: 20 },
+];
+
+proceedToCheckout<ProductCategoryA>(products);
